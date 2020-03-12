@@ -42,6 +42,14 @@ apply plugin: "com.google.cloud.tools.jib"
 dependencies {
     compile "org.apereo.cas:cas-server-webapp${project.appServer}:${casServerVersion}"
     // Other CAS dependencies/modules may be listed here...
+    compile "org.apereo.cas:cas-server-support-rest-authentication:${project.'cas.version'}"
+    compile "org.apereo.cas:cas-server-support-rest:${project.'cas.version'}"
+    compile "org.apereo.cas:cas-server-support-rest-tokens:${project.'cas.version'}"
+    compile "org.apereo.cas:cas-server-support-throttle-bucket4j:${project.'cas.version'}"
+    compile "org.apereo.cas:cas-server-support-token-tickets:${project.'cas.version'}"
+
+
+    compile "org.apereo.cas:cas-server-support-json-service-registry:${project.'cas.version'}"
 }
 
 tasks.findByName("jibDockerBuild")

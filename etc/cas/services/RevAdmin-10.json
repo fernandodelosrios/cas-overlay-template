@@ -1,0 +1,22 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^(https?|imaps?|http?)://.*",
+  "name" : "RevAdmin",
+  "id" : 1,
+  "evaluationOrder" : 0,
+  "properties" : {
+    "@class" : "java.util.HashMap",
+    "jwtSigningSecret" : {
+      "@class" : "org.apereo.cas.services.DefaultRegisteredServiceProperty",
+      "values" : [ "java.util.HashSet", [ "jRxTluc4WEa8v0ikK-OuuUyVYq8_-PCYmq6mi_oyAI6XL10ZfvVjhnsxZPmLW8h60IyZiLfAF5Qqmgr8-UzofQ" ] ]
+    },
+    "jwtEncryptionSecret" : {
+      "@class" : "org.apereo.cas.services.DefaultRegisteredServiceProperty",
+      "values" : [ "java.util.HashSet", [ "GReIudjVHHZd8afvHI_uRABwYg-huYhRTPaKnkVqFw4" ] ]
+    },
+    "jwtAsResponse" : {
+      "@class" : "org.apereo.cas.services.DefaultRegisteredServiceProperty",
+      "values" : [ "java.util.HashSet", [ "true" ] ]
+    }
+  }
+}
